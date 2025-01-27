@@ -1,4 +1,6 @@
 #!/bin/bash
+# update submodule
+git submodule update --init --remote
 # commit
 if [[ $(git diff --stat) != '' ]]; then
   git config --local user.email "github-actions[bot]@users.noreply.github.com"
