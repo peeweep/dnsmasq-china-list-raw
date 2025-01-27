@@ -6,7 +6,7 @@ if [[ $(git diff --stat) != '' ]]; then
   git config --local user.email "github-actions[bot]@users.noreply.github.com"
   git config --local user.name "github-actions[bot]"
   pushd ./dnsmasq-china-list
-  make
+  make raw
   popd
   cp -v ./dnsmasq-china-list/*.raw.txt .
   git add .
